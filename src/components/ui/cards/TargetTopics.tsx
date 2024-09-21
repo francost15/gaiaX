@@ -1,3 +1,4 @@
+import { IoMdAdd } from "react-icons/io"
 import { VscDebugStart } from "react-icons/vsc"
 
 const cards = [
@@ -41,7 +42,7 @@ export const TargetTopics = () => {
           <div className="flex ml-auto justify-end -mt-4">
             <button className="bg-yellow-600  rounded-full p-2 hover:bg-yellow-800"
             title="start-course">
-              <VscDebugStart size={20} color="white" />
+              <IoMdAdd size={30} color="white"/>
             </button>
           </div>
         </div>

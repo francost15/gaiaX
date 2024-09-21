@@ -3,7 +3,7 @@ import { IoChatbox, IoClose } from 'react-icons/io5'
 import { InputSend } from './InputSend'
 
 export const ChatModule = () => {
-  const [isChatVisible, setIsChatVisible] = useState(true)
+  const [isChatVisible, setIsChatVisible] = useState(false)
 
   const handleToggleChat = () => {
     setIsChatVisible(!isChatVisible)
