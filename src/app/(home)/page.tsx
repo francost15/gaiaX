@@ -1,7 +1,7 @@
 "use client";
 // Home.tsx
 import { useState, useEffect } from "react";
-import { CardAI, Navbar, TargetTopics } from "@/components";
+import { CardAI, ChatModule, Navbar, TargetTopics } from "@/components";
 
 export default function Home() {
   const [theme, setTheme] = useState<string | null>(null);
@@ -23,6 +23,7 @@ export default function Home() {
         {/* Pasamos tanto el theme como la función toggleTheme */}
         <Navbar theme={theme} toggleTheme={toggleTheme} />
         <CardAI />
+        <ChatModule />
         <TargetTopics />
       </div>
     </div>

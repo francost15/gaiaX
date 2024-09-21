@@ -18,9 +18,6 @@ export const CardAI = () => {
           </button>
         </div>
       </div>
-      
-      <h2 className="text-xl font-bold mb-4">Hola User</h2>
-      <p className="text-sm text-gray-600 mb-4">¿Qué aprenderás hoy?</p>
       </div>
   )
 }
