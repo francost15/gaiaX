@@ -13,8 +13,8 @@ export const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
   return (
     <nav>
       <div className="flex justify-between p-4">
-        {/* sidebar */}
-        <div className="flex items-center space-x-3">
+        {/* Sidebar */}
+        <div className="flex items-center space-x-10">
           <SideBar />
           {/* Cambiar el logo dependiendo del tema */}
           {theme === "dark" ? (
@@ -28,8 +28,9 @@ export const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
           <button
             onClick={toggleTheme}
             className="rounded-md"
+            style={{ color: theme === "dark" ? "#fff" : "#333" }} // Cambio de color según el tema
           >
-            {theme === "dark" ? <CiLight size={25} /> : <IoMoonOutline size={25}/>}
+            {theme === "dark" ? <CiLight size={25} /> : <IoMoonOutline size={25} />}
           </button>
           {/* Notificaciones y ajustes */}
           <ul className="flex space-x-4">

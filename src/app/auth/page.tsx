@@ -6,3 +6,4 @@ export default function NotFoundPageHome() {
     redirect("/auth/login")
   );
 }
+

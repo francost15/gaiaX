@@ -25,3 +25,5 @@ export default async function GaiaXLayout( { children }: {
     </main>
   );
 }
+
+

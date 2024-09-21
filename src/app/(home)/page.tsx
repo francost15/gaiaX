@@ -2,6 +2,7 @@
 // Home.tsx
 import { useState, useEffect } from "react";
 import { CardAI, Navbar, TargetTopics } from "@/components";
+import Formulario from "@/components/form/Formulario";
 
 export default function Home() {
   const [theme, setTheme] = useState<string | null>(null);
@@ -21,10 +22,17 @@ export default function Home() {
     <div className={theme === "dark" ? "dark" : ""}>
       <div className={`${theme === "dark" ? "bg-neutral-800 text-white" : "bg-white text-black"} min-h-screen transition-all`}>
         {/* Pasamos tanto el theme como la función toggleTheme */}
-        <Navbar theme={theme} toggleTheme={toggleTheme} />
+       {/* <Navbar theme={theme} toggleTheme={toggleTheme} />
         <CardAI />
-        <TargetTopics />
+  <TargetTopics />*/}
+
+        <Formulario/>
+
       </div>
     </div>
   );
 }
+
+
+
+
