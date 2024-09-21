@@ -1,6 +1,7 @@
 "use client";
 import { useState } from 'react';
 import { Flame, Brain, Book, Trophy, Target, Star } from 'lucide-react';
+import { Navbar } from '@/components';
 
 interface Achievement {
   id: number;
@@ -25,6 +26,9 @@ export default function Component() {
   const [expandedId, setExpandedId] = useState<number | null>(null);
 
   return (
+    <>
+    
+    <Navbar />
     <div className="p-4 bg-gray-100 min-h-screen">
       <h1 className="text-3xl font-bold mb-6 text-center text-gray-800">Lista de logros</h1>
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -101,5 +105,6 @@ export default function Component() {
         ))}
       </div>
     </div>
+    </>
   );
 }

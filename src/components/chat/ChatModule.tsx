@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react'
 import { IoChatbox, IoClose } from 'react-icons/io5'
 import { InputSend } from './InputSend'

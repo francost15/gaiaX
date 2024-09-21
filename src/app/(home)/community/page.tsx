@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import {  Send, Image, Paperclip, Smile, MoreVertical, Star, Video, Trophy } from 'lucide-react'
+import { Navbar } from '@/components'
 
 interface Message {
   id: number
@@ -50,6 +51,9 @@ export default function CommunityPlatform() {
   }
 
   return (
+    <>
+    
+    <Navbar/>
     <div className="flex h-screen bg-gray-100">
       <div className="w-1/3 bg-white border-r">
         <div className="p-4 border-b">
@@ -92,9 +96,7 @@ export default function CommunityPlatform() {
             {activeTab === "general" ? "Chat General" : selectedContact?.name}
           </div>
           <div className="flex space-x-2">
-            <button className="p-2">
-              <Video className="h-4 w-4" />
-            </button>
+        
           
             <button className="p-2">
               <MoreVertical className="h-4 w-4" />
@@ -143,5 +145,6 @@ export default function CommunityPlatform() {
         </div>
       </div>
     </div>
+    </>
   )
 }

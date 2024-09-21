@@ -1,7 +1,8 @@
 "use client";
 // Home.tsx
 import { useState, useEffect } from "react";
-import { CardAI, ChatModule, Navbar, TargetTopics } from "@/components";
+import { CardAI, ChatModule, Navbar, } from "@/components";
+import TargetTopics from "@/components/ui/cards/TargetTopics";
 
 export default function Home() {
   const [theme, setTheme] = useState<string | null>(null);
@@ -25,6 +26,8 @@ export default function Home() {
         <CardAI />
         <ChatModule />
         <TargetTopics />
+        {/* aqui pondremos el children */}
+        
       </div>
     </div>
   );

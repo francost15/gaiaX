@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { MdEdit } from "react-icons/md";
 import { Flame, Brain, Book, Trophy, Target } from 'lucide-react'
+import { Navbar } from "@/components";
 
 interface Achievement {
   id: number;
@@ -21,6 +22,8 @@ const achievements: Achievement[] = [
 
 export default function ProfilePage() {
   return (
+    <>
+      <Navbar/>
     <div className="min-h-screen bg-gray-100 p-4 md:p-8">
       <div className="max-w-3xl mx-auto">
         <div className="flex flex-col items-center md:flex-row md:items-start gap-4">
@@ -95,5 +98,6 @@ export default function ProfilePage() {
         </div>
       </div>
     </div>
+    </>
   )
 }

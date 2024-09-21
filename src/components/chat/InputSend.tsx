@@ -1,3 +1,4 @@
+"use client"
 import { FormEvent, useState, useRef, useEffect, KeyboardEvent } from 'react';
 import { IoSend } from 'react-icons/io5';
 interface Props {

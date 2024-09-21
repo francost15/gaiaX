@@ -1,3 +1,4 @@
+"use client"
 import Link from 'next/link';
 import React, { useState } from 'react';
 import {
@@ -6,7 +7,7 @@ import {
 } from 'react-icons/io5';
 
 export const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(true); // Inicia con el sidebar visible
+  const [isOpen, setIsOpen] = useState(false); // Inicia con el sidebar visible
 
   const toggleSidebar = () => setIsOpen(!isOpen);
 
@@ -15,8 +16,8 @@ export const Sidebar = () => {
     { icon: <IoPersonOutline className="w-6 h-6" />, label: 'Perfil', link: '/profile' },
     { icon: <IoPeopleOutline className="w-6 h-6" />, label: 'Comunidades', link: '/community' },
     { icon: <IoTrophyOutline className="w-6 h-6" />, label: 'Logros', link: '/skills' },
-    { icon: <IoSchoolOutline className="w-6 h-6" />, label: 'Certificaciones' },
-    { icon: <IoBookOutline className="w-6 h-6" />, label: 'Biblioteca Virtual' },
+    { icon: <IoSchoolOutline className="w-6 h-6" />, label: 'Certificaciones', link: '/reports' },
+    { icon: <IoBookOutline className="w-6 h-6" />, label: 'Biblioteca Virtual', link: '/library' },
   ];
 
   return (
